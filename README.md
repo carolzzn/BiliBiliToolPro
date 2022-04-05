@@ -305,3 +305,19 @@ dotnet Ray.BiliBiliTool.Console.dll --runTasks=Daily&LiveLottery
 - [SocialSisterYi/bilibili-API-collect](https://github.com/SocialSisterYi/bilibili-API-collect)
 
 - [JunzhouLiu/BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER)
+
+——————————————————————————————————————————————————————————————————————————————————————————————
+——————————————————————————————————————————————————————————————————————————————————————————————
+获取b站cookie
+谷歌浏览器登录b站 https://www.bilibili.com/ ，打开控制台找到Application下的Cookies 。图片
+
+我们需要bili_jct,SESSDATA,DEDEUSERID这三项，然后fork 这个GitHub项目 https://github.com/RayWangQvQ/BiliBiliTool
+
+GitHub Secrets
+打开 GitHub actions 新建3个secrets 变量 USERID，SESSDATA，BILIJCT ，值就是上面的cookie值。
+
+图片
+ 
+图片
+ 
+接着开启 workflow 。图片执行 workflow 测试下。图片执行成功。图片看下执行结果日志。
